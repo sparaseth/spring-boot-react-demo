@@ -1,4 +1,4 @@
-package com.skptech.demo.dao;
+package com.skptech.demo.repository;
 
 import com.skptech.demo.model.Student;
 import com.skptech.demo.model.StudentCourse;
@@ -6,7 +6,7 @@ import com.skptech.demo.model.StudentCourse;
 import java.util.List;
 import java.util.UUID;
 
-public interface StudentDao {
+public interface StudentRepository {
 
     List<Student> getAllStudents();
 

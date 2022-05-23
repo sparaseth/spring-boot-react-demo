@@ -1,4 +1,4 @@
-package com.skptech.demo.dao;
+package com.skptech.demo.repository;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @Repository
 @AllArgsConstructor
-public class StudentDaoImpl implements StudentDao {
+public class StudentRepositoryImpl implements StudentRepository {
 
     private final JdbcTemplate jdbcTemplate;
 

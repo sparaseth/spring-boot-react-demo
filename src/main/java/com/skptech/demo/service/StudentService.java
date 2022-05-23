@@ -1,6 +1,6 @@
 package com.skptech.demo.service;
 
-import com.skptech.demo.dao.StudentDao;
+import com.skptech.demo.repository.StudentRepository;
 import com.skptech.demo.exception.ApiRequestException;
 import com.skptech.demo.model.Student;
 import com.skptech.demo.model.StudentCourse;
@@ -17,7 +17,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class StudentService {
 
-    private final StudentDao studentDao;
+    private final StudentRepository studentDao;
     private final EmailValidator emailValidator;
 
     public List<Student> getAllStudents() {
